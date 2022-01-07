@@ -1,12 +1,12 @@
 name: User Management System
 on:
-  push:
-  pull_request:
-  schedule:
-    - cron: "0 * * * *"
+push:
+pull_request:
+schedule:
+- cron: "0 * * * *"
 
 jobs:
-  build:
+build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
