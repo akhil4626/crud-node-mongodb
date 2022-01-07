@@ -1,0 +1,63 @@
+<%- include('include/_header') %>
+    <!-- heder end -->
+
+    <main id="site-mai">
+        <div class="container">
+            <div class="box-nav d-flex-justify-between">
+                <a href="/" class="border-shadow btn btn-sm btn-warning">
+                    <span class="text-gradient">All User <i class="fas fa-user"></i></span>
+                </a>
+            </div>
+
+            <div class="form-title text-center">
+                <h2>Update User</h2>
+            </div>
+            <!-- user form -->
+
+            <!-- form -->
+            <form method="post" id="update_user" class="form-check mt-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">User Name</label>
+                    <input type="hidden" name="id" value="">
+                    <input type="text" name="name" class="form-control" value="" placeholder="Enter Name">
+                </div>
+            
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+            
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Gender : </label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Active Status : </label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="status" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Active</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="status" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Inactive</label>
+                    </div>
+                </div>
+            
+                <button type="submit" class="btn btn-success" style="float: right;">Submit</button>
+            </form>
+
+        </div>
+    </main>
+    <!-- Main Site -->
+
+    <%- include('include/_footer') %>
