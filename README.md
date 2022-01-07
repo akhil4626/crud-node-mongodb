@@ -23,7 +23,7 @@ jobs:
       - name: Commit the new README.MD file
         run: |-
           git diff
-          git config --global user.email "ketanrajpal@gmail.com"
-          git config --global user.name "ketanrajpal"
+          git config --global user.email "your email"
+          git config --global user.name "your name"
           git diff --quiet || (git add README.md && git commit -m "Update the README.md file")
           git push
