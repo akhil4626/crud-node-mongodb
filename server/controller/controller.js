@@ -1,5 +1,5 @@
 const Userdb = require('../model/model');
-var userdb = require('../model/model');
+// var userdb = require('../model/model');
 
 // create and save user
 exports.create = (req, res) => {
@@ -19,10 +19,10 @@ exports.create = (req, res) => {
 
     // save user
     user
-        .save(user)
+        .save()
         .then(data => {
-            // res.send(data)
-            res.redirect('/add-user');
+             res.send(data);
+            //res.redirect('/add-user');
         })
         .catch(err => {
             res.status(500).send({
